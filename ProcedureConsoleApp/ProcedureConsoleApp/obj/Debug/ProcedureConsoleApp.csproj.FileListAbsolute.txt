@@ -1,0 +1,7 @@
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\bin\Debug\ProcedureConsoleApp.exe.config
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\bin\Debug\ProcedureConsoleApp.exe
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\bin\Debug\ProcedureConsoleApp.pdb
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.csprojAssemblyReference.cache
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.exe
+C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.pdb
