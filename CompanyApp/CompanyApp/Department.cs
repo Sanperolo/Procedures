@@ -15,11 +15,11 @@ namespace CompanyApp
         public int EmpCount { get; set; }
 
 
-        public string DepartmentEmployeeCount
+        public string FullInfo
         {
             get
             {
-                return $"{ DName } {EmpCount}";
+                return $"{ DName } ({EmpCount})";
             }
         }
 

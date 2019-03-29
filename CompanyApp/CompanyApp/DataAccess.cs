@@ -11,7 +11,6 @@ namespace CompanyApp
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CxnString("CompanyDB")))
             {
-                //var output = connection.Query<Department>($"select * from Department where DNumber = '{ depNum }'").ToList();
                 var output = connection.Query<Department>($"dbo.usp_GetDepartment @DNumber", new { DNumber = depNum }).ToList();
 
                 return output;
