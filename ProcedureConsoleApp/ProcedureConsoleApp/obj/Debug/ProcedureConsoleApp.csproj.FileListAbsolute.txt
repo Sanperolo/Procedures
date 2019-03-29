@@ -5,3 +5,7 @@ C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Deb
 C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.exe
 C:\Users\Mi PC\workspaceLargeSys\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.pdb
+C:\Users\edila\Desktop\Work\CSharp\Procedures\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.csprojAssemblyReference.cache
+C:\Users\edila\Desktop\Work\CSharp\Procedures\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\edila\Desktop\Work\CSharp\Procedures\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.exe
+C:\Users\edila\Desktop\Work\CSharp\Procedures\ProcedureConsoleApp\ProcedureConsoleApp\obj\Debug\ProcedureConsoleApp.pdb
