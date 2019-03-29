@@ -11,3 +11,16 @@ C:\Users\edila\Desktop\Work\CSharp\CompanyApp\CompanyApp\obj\Debug\CompanyApp.pd
 C:\Users\edila\Desktop\Work\CSharp\CompanyApp\CompanyApp\bin\Debug\Dapper.dll
 C:\Users\edila\Desktop\Work\CSharp\CompanyApp\CompanyApp\bin\Debug\Dapper.xml
 C:\Users\edila\Desktop\Work\CSharp\CompanyApp\CompanyApp\obj\Debug\CompanyApp.csproj.CopyComplete
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\bin\Debug\CompanyApp.exe.config
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\bin\Debug\CompanyApp.exe
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\bin\Debug\CompanyApp.pdb
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\bin\Debug\Dapper.dll
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\bin\Debug\Dapper.xml
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.csprojAssemblyReference.cache
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.Dashboard.resources
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.Properties.Resources.resources
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.csproj.GenerateResource.cache
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.csproj.CoreCompileInputs.cache
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.csproj.CopyComplete
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.exe
+C:\Users\Mi PC\workspaceFP\Procedures\CompanyApp\CompanyApp\obj\Debug\CompanyApp.pdb

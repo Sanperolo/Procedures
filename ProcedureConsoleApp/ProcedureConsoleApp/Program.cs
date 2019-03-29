@@ -43,39 +43,27 @@ namespace ProcedureConsoleApp
                             }
                         case 2:
                             {
-                                try{
-                                    SqlCommand cmd = new SqlCommand("usp_UpdateDepartmentName", Conection.conectionDB);
-                                    cmd.CommandType = CommandType.StoredProcedure;
-                                    cmd.ExecuteReader();
-                                    System.Console.WriteLine("MIAU 2");
-                                }
-                                catch(SqlException ex){
-                                    Console.WriteLine("The name that you put is using right now by other Dept.");
-                                }
+                                UpdateDName(Conection);
                                 break;
-                            }
+                        }
                         case 3:
                             {
-                                UpdateDManager();
-                                System.Console.WriteLine("MIAU 3");
+                                UpdateDManager(Conection);
                                 break;
                             }
                         case 4:
                             {
-                                DeleteDepartment();
-                                System.Console.WriteLine("MIAU 4");
+                                DeleteDepartment(Conection);
                                 break;
                             }
                         case 5:
                             {
-                                GetDepartment();
-                                System.Console.WriteLine("MIAU 5");
+                                GetDepartment(Conection);
                                 break;
                             }
                         case 6:
                             {
-                                GetAll();
-                                System.Console.WriteLine("MIAU 6");
+                                GetAll(Conection);
                                 break;
                             }
                         case 7:
@@ -97,35 +85,6 @@ namespace ProcedureConsoleApp
 
         private static void CreateDepartment(DDBBConection Conection)
         {
-           // try
-           // {
-                SqlCommand cmd = new SqlCommand("usp_CreateDepartment", Conection.conectionDB);
-                cmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter param1 = new SqlParameter();
-                param1.ParameterName = "@DName";
-                param1.Value = "NEW DEPARTMENT";
-                param1.SqlDbType = SqlDbType.NVarChar;
-                param1.Size = 50;
-                cmd.Parameters.Add(param1);
-
-                SqlParameter param2 = new SqlParameter();
-                param2.ParameterName = "@MgrSSN";
-                param2.Value = "123456879";
-                param2.SqlDbType = SqlDbType.Int;
-                param2.Size = 9;
-                cmd.Parameters.Add(param2);
-                cmd.ExecuteNonQuery();
-                System.Console.WriteLine("MIAU 1");
-            //}
-            /*catch (SqlException ex)
-            {
-                Console.WriteLine("The name that you put is using right now by other Dept.");
-            }*/
-        }
-
-        private static void UpdateDManager()//DDBBConection Conection)
-        {
             SqlCommand cmd = new SqlCommand("usp_CreateDepartment", Conection.conectionDB);
             cmd.CommandType = CommandType.StoredProcedure;
 
@@ -136,9 +95,47 @@ namespace ProcedureConsoleApp
             param1.Size = 50;
             cmd.Parameters.Add(param1);
 
+            SqlParameter param2 = new SqlParameter("@MgrSSN", 188665555);
+            cmd.Parameters.Add(param2);
+            cmd.ExecuteNonQuery();
+        }
+
+        private static void UpdateDName(DDBBConection Conection)
+        {
+            SqlCommand cmd = new SqlCommand("usp_UpdateDepartmentName", Conection.conectionDB);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter param1 = new SqlParameter();
+            param1.ParameterName = "@DName";
+            param1.Value = "Update DEPARTMENT";
+            param1.SqlDbType = SqlDbType.NVarChar;
+            param1.Size = 50;
+            cmd.Parameters.Add(param1);
+
+            SqlParameter param2 = new SqlParameter();
+            param2.ParameterName = "@DNumber";
+            param2.Value = "6";
+            param2.SqlDbType = SqlDbType.Int;
+            param2.Size = 4;
+            cmd.Parameters.Add(param2);
+            cmd.ExecuteNonQuery();
+        }
+
+        private static void UpdateDManager(DDBBConection Conection)
+        {
+            SqlCommand cmd = new SqlCommand("usp_UpdateDepartmentManager", Conection.conectionDB);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter param1 = new SqlParameter();
+            param1.ParameterName = "@DNumber";
+            param1.Value = "6";
+            param1.SqlDbType = SqlDbType.NVarChar;
+            param1.Size = 4;
+            cmd.Parameters.Add(param1);
+
             SqlParameter param2 = new SqlParameter();
             param2.ParameterName = "@MgrSSN";
-            param2.Value = "123456879";
+            param2.Value = "188665551";
             param2.SqlDbType = SqlDbType.Int;
             param2.Size = 9;
             cmd.Parameters.Add(param2);
@@ -147,14 +144,14 @@ namespace ProcedureConsoleApp
 
         private static void DeleteDepartment(DDBBConection Conection)
         {
-            SqlCommand cmd = new SqlCommand("usp_CreateDepartment", Conection.conectionDB);
+            SqlCommand cmd = new SqlCommand("usp_DeleteDepartment", Conection.conectionDB);
             cmd.CommandType = CommandType.StoredProcedure;
 
             SqlParameter param1 = new SqlParameter();
-            param1.ParameterName = "@DName";
-            param1.Value = "NEW DEPARTMENT";
-            param1.SqlDbType = SqlDbType.NVarChar;
-            param1.Size = 50;
+            param1.ParameterName = "@DNumber";
+            param1.Value = "6";
+            param1.SqlDbType = SqlDbType.Int;
+            param1.Size = 4;
             cmd.Parameters.Add(param1);
             
             cmd.ExecuteNonQuery();
@@ -162,28 +159,33 @@ namespace ProcedureConsoleApp
 
         private static void GetDepartment(DDBBConection Conection)
         {
-            SqlCommand cmd = new SqlCommand("usp_CreateDepartment", Conection.conectionDB);
+            SqlCommand cmd = new SqlCommand("usp_GetDepartment", Conection.conectionDB);
             cmd.CommandType = CommandType.StoredProcedure;
 
             SqlParameter param1 = new SqlParameter();
-            param1.ParameterName = "@DName";
-            param1.Value = "NEW DEPARTMENT";
-            param1.SqlDbType = SqlDbType.NVarChar;
-            param1.Size = 50;
+            param1.ParameterName = "@DNumber";
+            param1.Value = "99";
+            param1.SqlDbType = SqlDbType.Int;
+            param1.Size = 4;
             cmd.Parameters.Add(param1);
-
-            SqlParameter param2 = new SqlParameter();
-            param2.ParameterName = "@MgrSSN";
-            param2.Value = "123456879";
-            param2.SqlDbType = SqlDbType.Int;
-            param2.Size = 9;
-            cmd.Parameters.Add(param2);
-            cmd.ExecuteNonQuery();
+            
+            cmd.ExecuteReader();
         }
 
         private static void GetAll(DDBBConection Conection)
         {
-
+            SqlCommand cmd = new SqlCommand("usp_GetAllDepartments", Conection.conectionDB);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataReader reader = cmd.ExecuteReader();
+            SqlParameter return_Name = new SqlParameter("@RETURN_Name", SqlDbType.NVarChar);
+            return_Name.Direction = ParameterDirection.ReturnValue;
+            cmd.Parameters.Add(return_Name);
+            int i = 0;
+            while (reader.Read())
+            {
+                Console.WriteLine(reader.ToString());
+            }
+            reader.Close();
         }
     }
 
