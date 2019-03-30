@@ -54,9 +54,9 @@
             // 
             // departmentIdText
             // 
-            this.departmentIdText.Location = new System.Drawing.Point(185, 46);
+            this.departmentIdText.Location = new System.Drawing.Point(185, 42);
             this.departmentIdText.Name = "departmentIdText";
-            this.departmentIdText.Size = new System.Drawing.Size(84, 37);
+            this.departmentIdText.Size = new System.Drawing.Size(110, 37);
             this.departmentIdText.TabIndex = 1;
             this.departmentIdText.TextChanged += new System.EventHandler(this.departmentIdText_TextChanged);
             // 
@@ -75,7 +75,7 @@
             // 
             this.getDepartmentByIdBtn.AccessibleName = "";
             this.getDepartmentByIdBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.getDepartmentByIdBtn.Location = new System.Drawing.Point(275, 44);
+            this.getDepartmentByIdBtn.Location = new System.Drawing.Point(301, 34);
             this.getDepartmentByIdBtn.Name = "getDepartmentByIdBtn";
             this.getDepartmentByIdBtn.Size = new System.Drawing.Size(157, 45);
             this.getDepartmentByIdBtn.TabIndex = 3;
@@ -86,7 +86,7 @@
             // getAllDepartmentsBtn
             // 
             this.getAllDepartmentsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.getAllDepartmentsBtn.Location = new System.Drawing.Point(495, 44);
+            this.getAllDepartmentsBtn.Location = new System.Drawing.Point(495, 34);
             this.getAllDepartmentsBtn.Name = "getAllDepartmentsBtn";
             this.getAllDepartmentsBtn.Size = new System.Drawing.Size(198, 45);
             this.getAllDepartmentsBtn.TabIndex = 5;

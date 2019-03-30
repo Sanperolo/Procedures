@@ -18,13 +18,13 @@ namespace CompanyApp
         public Dashboard()
         {
             InitializeComponent();
-            displayData();
+            updateBinding();
         }
 
-        public void displayData()
+        public void updateBinding()
         {
             departmentEmployeesList.DataSource = departments;
-            departmentEmployeesList.DisplayMember = "DepartmentEmployeeCount";
+            departmentEmployeesList.DisplayMember = "FullInfo";
 
         }
         private void Dashboard_Load(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace CompanyApp
         {
             departments = db.getDepartment(departmentIdText.Text);
 
-            displayData();
+            updateBinding();
 
         }
         
@@ -59,7 +59,7 @@ namespace CompanyApp
         {
             departments = db.getAllDepartments();
 
-            displayData();
+            updateBinding();
         }
 
         private void deleteDepartmentBtn_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace CompanyApp
 
         private void addDepartmentBtn_Click(object sender, EventArgs e)
         {
-            db.createDepartment(departmentIdText.Text, int.Parse(managerText.Text));
+            db.createDepartment(departmentText.Text, int.Parse(managerText.Text));
         }
 
         private void departmentText_TextChanged(object sender, EventArgs e)
